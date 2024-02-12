@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2ebe3;
+}
+
+.main_holder {
+    display: flex;
+    margin: 150px auto 0 auto; 
+    width: 550px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.image-desk {
+    width: 275px;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.image-mobile {
+    display: none;
+}
+
+.text_area {
+    padding: 30px;
+}
+
+.perfume {
+    color: gray;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.prod_name {
+    margin-top: 20px;
+    font-family: 'Fraunces', serif;
+    font-size: 33px;
+    line-height: 1;
+}
+
+.prod_desc {
+    color: #8b8889;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.5px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.price {
+    display:flex;
+}
+
+.price1 {
+    margin-top: 20px;
+    font-family: 'Fraunces', serif;
+    color: #3e8168;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.price2 {
+    color: gray;
+    margin: 30px 0 0 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.3px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.add_to_cart {
+    display: flex;
+    justify-content: center;
+    background-color: #3d8168;
+    height: 40px;
+    width: 220px;
+    margin: 30px auto 0 auto;
+    padding: 12px;
+    line-height: 1.7;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.add_to_cart:hover {
+    cursor: pointer;
+    background-color: #37745e;
+    box-shadow: 2px 2px darkgray;
+}
+
+.cart {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .main_holder {
+        display: block;
+        width: 90%;
+        margin: 30px auto 0 auto;
+    }
+
+    .image-desk {
+        display: none;
+    }
+
+    .image-mobile {
+        width: 100%;
+        display:block;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .add_to_cart {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .text_area {
+        padding-top: 20px;
+    }
+
+    .prod_name {
+        margin-top: 15px;
+    }
+}
